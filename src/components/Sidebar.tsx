@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, CreditCard, Link2, Key, Settings, Zap } from 'lucide-react';
+import { LayoutDashboard, CreditCard, Link2, Key, Settings, Zap, Users, ArrowUpDown } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
@@ -9,6 +9,8 @@ const Sidebar: React.FC = () => {
     { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
     { path: '/transactions', icon: CreditCard, label: 'Transactions' },
     { path: '/payment-links', icon: Link2, label: 'Payment Links' },
+    { path: '/subscriptions', icon: Users, label: 'Subscriptions' },
+    { path: '/conversions', icon: ArrowUpDown, label: 'Conversions' },
     { path: '/api-keys', icon: Key, label: 'API Keys' },
     { path: '/settings', icon: Settings, label: 'Settings' },
   ];

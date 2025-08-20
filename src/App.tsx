@@ -5,6 +5,8 @@ import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
 import PaymentLinkGenerator from './pages/PaymentLinkGenerator';
 import PaymentWidget from './pages/PaymentWidget';
+import Subscriptions from './pages/Subscriptions';
+import Conversions from './pages/Conversions';
 import ApiKeys from './pages/ApiKeys';
 import Settings from './pages/Settings';
 import Layout from './components/Layout';
@@ -28,6 +30,16 @@ function App() {
           <Route path="/payment-links" element={
             <Layout>
               <PaymentLinkGenerator />
+            </Layout>
+          } />
+          <Route path="/subscriptions" element={
+            <Layout>
+              <Subscriptions />
+            </Layout>
+          } />
+          <Route path="/conversions" element={
+            <Layout>
+              <Conversions />
             </Layout>
           } />
           <Route path="/api-keys" element={
